@@ -10,115 +10,190 @@
 
     <meta
         name="description"
-        content="Blog acadêmico para publicação de artigos desenvolvidos pela equipe."
+        content="Blog acadêmico sobre a evolução das metodologias de desenvolvimento de software."
     >
 
     <title>Blog Evolução</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <section class="bloco">
-        <div class="titulo-secao">
-            <p class="categoria">Publicações</p>
+    <main class="pagina">
 
-            <h1>Artigos do Blog</h1>
+        <header class="cabecalho-principal">
+            <p class="categoria">Capstone Project</p>
+
+            <h1>Blog Evolução</h1>
+
+            <p class="subtitulo">
+                A evolução das metodologias de desenvolvimento de software
+            </p>
+        </header>
+
+        <section class="bloco" id="resumo">
+            <div class="titulo-secao">
+                <p class="categoria">Sobre o projeto</p>
+                <h2>Resumo</h2>
+            </div>
 
             <p>
-                Nesta seção serão publicados os artigos desenvolvidos pelos
-                integrantes da equipe.
+                Este blog apresenta conteúdos relacionados à evolução das
+                metodologias utilizadas no desenvolvimento de software,
+                abordando seus conceitos, características e contribuições para
+                a Engenharia de Software.
             </p>
-        </div>
+        </section>
 
-        <article class="artigo">
-            <h2>Título do primeiro artigo</h2>
+        <section class="bloco" id="publicacoes">
+            <div class="titulo-secao">
+                <p class="categoria">Publicações</p>
 
-            <div class="dados-publicacao">
-                <p class="data-publicacao">
-                    <strong>Publicado em:</strong> DD/MM/AAAA
-                </p>
+                <h2>Artigos do Blog</h2>
 
                 <p>
-                    <strong>Autor:</strong> Nome do autor
-                </p>
-
-                <p>
-                    <strong>Revisado por:</strong> Nome do revisor
+                    Nesta seção serão publicados os artigos desenvolvidos e
+                    revisados pelos integrantes da equipe.
                 </p>
             </div>
 
-            <p class="resumo-artigo">
-                Resumo do artigo. Esta área apresentará uma breve descrição
-                do conteúdo desenvolvido pelo autor.
-            </p>
+            <article class="artigo">
+                <header class="cabecalho-artigo">
+                    <h3>Título do primeiro artigo</h3>
 
-            <a href="#" class="botao-artigo">
-                Ler artigo completo
-            </a>
-        </article>
+                    <div class="dados-artigo">
+                        <span>
+                            <strong>Autor:</strong> Nome do autor
+                        </span>
 
-        <hr>
+                        <span>
+                            <strong>Revisado por:</strong> Nome do revisor
+                        </span>
 
-        <article class="artigo">
-            <h2>Título do segundo artigo</h2>
-
-            <div class="dados-publicacao">
-                <p class="data-publicacao">
-                    <strong>Publicado em:</strong> DD/MM/AAAA
-                </p>
-
-                <p>
-                    <strong>Autor:</strong> Nome do autor
-                </p>
+                        <span>
+                            <strong>Publicado em:</strong> DD/MM/AAAA
+                        </span>
+                    </div>
+                </header>
 
                 <p>
-                    <strong>Revisado por:</strong> Nome do revisor
+                    Resumo do artigo. Esta área apresentará uma breve descrição
+                    do conteúdo desenvolvido pelo autor.
                 </p>
+
+                <p class="aviso">Conteúdo em desenvolvimento.</p>
+            </article>
+
+            <article class="artigo">
+                <header class="cabecalho-artigo">
+                    <h3>Título do segundo artigo</h3>
+
+                    <div class="dados-artigo">
+                        <span>
+                            <strong>Autor:</strong> Nome do autor
+                        </span>
+
+                        <span>
+                            <strong>Revisado por:</strong> Nome do revisor
+                        </span>
+
+                        <span>
+                            <strong>Publicado em:</strong> DD/MM/AAAA
+                        </span>
+                    </div>
+                </header>
+
+                <p>
+                    Resumo do artigo. Esta área apresentará uma breve descrição
+                    do conteúdo desenvolvido pelo autor.
+                </p>
+
+                <p class="aviso">Conteúdo em desenvolvimento.</p>
+            </article>
+
+            <article class="artigo">
+                <header class="cabecalho-artigo">
+                    <h3>Título do terceiro artigo</h3>
+
+                    <div class="dados-artigo">
+                        <span>
+                            <strong>Autor:</strong> Nome do autor
+                        </span>
+
+                        <span>
+                            <strong>Revisado por:</strong> Nome do revisor
+                        </span>
+
+                        <span>
+                            <strong>Publicado em:</strong> DD/MM/AAAA
+                        </span>
+                    </div>
+                </header>
+
+                <p>
+                    Resumo do artigo. Esta área apresentará uma breve descrição
+                    do conteúdo desenvolvido pelo autor.
+                </p>
+
+                <p class="aviso">Conteúdo em desenvolvimento.</p>
+            </article>
+        </section>
+
+        <section class="bloco" id="equipe">
+            <div class="titulo-secao">
+                <p class="categoria">Organização</p>
+                <h2>Equipe e distribuição</h2>
             </div>
 
-            <p class="resumo-artigo">
-                Resumo do artigo. Esta área apresentará uma breve descrição
-                do conteúdo desenvolvido pelo autor.
-            </p>
+            <div class="tabela-responsabilidades">
+                <div class="integrante">
+                    <h3>Nome do integrante 1</h3>
+                    <p><strong>Responsabilidade:</strong> Primeiro artigo</p>
+                    <p><strong>Revisor:</strong> Nome do revisor</p>
+                </div>
 
-            <a href="#" class="botao-artigo">
-                Ler artigo completo
-            </a>
-        </article>
+                <div class="integrante">
+                    <h3>Nome do integrante 2</h3>
+                    <p><strong>Responsabilidade:</strong> Segundo artigo</p>
+                    <p><strong>Revisor:</strong> Nome do revisor</p>
+                </div>
 
-        <hr>
+                <div class="integrante">
+                    <h3>Nome do integrante 3</h3>
+                    <p><strong>Responsabilidade:</strong> Terceiro artigo</p>
+                    <p><strong>Revisor:</strong> Nome do revisor</p>
+                </div>
+            </div>
+        </section>
 
-        <article class="artigo">
-            <h2>Título do terceiro artigo</h2>
-
-            <div class="dados-publicacao">
-                <p class="data-publicacao">
-                    <strong>Publicado em:</strong> DD/MM/AAAA
-                </p>
-
-                <p>
-                    <strong>Autor:</strong> Nome do autor
-                </p>
-
-                <p>
-                    <strong>Revisado por:</strong> Nome do revisor
-                </p>
+        <section class="bloco" id="bibliografia">
+            <div class="titulo-secao">
+                <p class="categoria">Referências</p>
+                <h2>Bibliografia</h2>
             </div>
 
-            <p class="resumo-artigo">
-                Resumo do artigo. Esta área apresentará uma breve descrição
-                do conteúdo desenvolvido pelo autor.
-            </p>
+            <ul class="lista-bibliografia">
+                <li>
+                    SOMMERVILLE, Ian. Engenharia de Software.
+                </li>
 
-            <a href="#" class="botao-artigo">
-                Ler artigo completo
-            </a>
-        </article>
+                <li>
+                    PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software:
+                    Uma Abordagem Profissional.
+                </li>
+
+                <li>
+                    FOWLER, Martin. Refatoração: Aperfeiçoando o Design de
+                    Códigos Existentes.
+                </li>
+            </ul>
+        </section>
 
         <footer class="rodape">
             <p>Blog Evolução — Projeto acadêmico</p>
+            <p>&copy; 2026. Todos os direitos reservados.</p>
         </footer>
-    </section>
+
+    </main>
 </body>
 </html>
