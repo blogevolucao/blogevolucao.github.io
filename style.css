@@ -154,3 +154,54 @@ hr {
         font-size: 1.5rem;
     }
 }
+
+.titulo-secao h1 {
+    color: var(--secondary);
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
+
+.artigo h2 {
+    color: var(--primary);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+
+.dados-publicacao {
+    background-color: var(--highlight);
+    border-left: 4px solid var(--accent);
+    color: var(--muted);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 22px;
+    padding: 14px 18px;
+}
+
+.dados-publicacao p {
+    margin-bottom: 4px;
+}
+
+.dados-publicacao p:last-child {
+    margin-bottom: 0;
+}
+
+.resumo-artigo {
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+}
+
+.data-publicacao {
+    color: var(--accent);
+}
+
+.rodape {
+    border-top: 3px double var(--border);
+    color: var(--muted);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    margin-top: 48px;
+    padding-top: 24px;
+    text-align: center;
+}
