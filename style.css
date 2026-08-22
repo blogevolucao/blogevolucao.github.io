@@ -43,7 +43,9 @@ body {
 }
 
 
-/* CONTAINER PRINCIPAL */
+/* ================================
+   CONTAINER PRINCIPAL
+================================ */
 
 .bloco {
     background-color: var(--paper);
@@ -59,7 +61,9 @@ body {
 }
 
 
-/* CABEÇALHO */
+/* ================================
+   CABEÇALHO PRINCIPAL
+================================ */
 
 .cabecalho-principal {
     background:
@@ -93,7 +97,9 @@ body {
 }
 
 
-/* CATEGORIAS */
+/* ================================
+   CATEGORIAS
+================================ */
 
 .categoria {
     color: var(--accent);
@@ -111,7 +117,9 @@ body {
 }
 
 
-/* MARGENS INTERNAS */
+/* ================================
+   MARGENS INTERNAS
+================================ */
 
 .resumo-blog,
 .publicacoes,
@@ -123,7 +131,9 @@ body {
 }
 
 
-/* SOBRE O BLOG */
+/* ================================
+   SOBRE O BLOG
+================================ */
 
 .resumo-blog {
     background-color: var(--highlight);
@@ -151,7 +161,9 @@ body {
 }
 
 
-/* TÍTULOS DAS SEÇÕES */
+/* ================================
+   TÍTULOS DE SEÇÃO
+================================ */
 
 .titulo-secao {
     border-bottom:
@@ -174,7 +186,9 @@ body {
 }
 
 
-/* PUBLICAÇÕES */
+/* ================================
+   PUBLICAÇÕES
+================================ */
 
 .publicacoes {
     margin-top: 58px;
@@ -182,7 +196,9 @@ body {
 }
 
 
-/* ARTIGOS */
+/* ================================
+   ARTIGOS
+================================ */
 
 .artigo {
     background-color: white;
@@ -215,7 +231,9 @@ body {
 }
 
 
-/* DADOS DA PUBLICAÇÃO */
+/* ================================
+   DADOS DA PUBLICAÇÃO
+================================ */
 
 .dados-publicacao {
     background-color:
@@ -245,7 +263,9 @@ body {
 }
 
 
-/* RESUMO DO ARTIGO */
+/* ================================
+   RESUMO DO ARTIGO
+================================ */
 
 .resumo-artigo {
     font-size: 1.05rem;
@@ -254,11 +274,96 @@ body {
 }
 
 
-/* CONTEÚDO DO ARTIGO */
+/* ================================
+   ARTIGO EXPANSÍVEL
+================================ */
+
+.artigo-expansivel {
+    margin-top: 20px;
+}
+
+.artigo-expansivel summary {
+    background-color: var(--primary);
+
+    border: 0;
+    border-radius: 6px;
+
+    color: white;
+
+    cursor: pointer;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    list-style: none;
+
+    padding: 11px 18px;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.artigo-expansivel summary:hover {
+    background-color: var(--secondary);
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.10);
+
+    transform: translateY(-1px);
+}
+
+.artigo-expansivel summary::-webkit-details-marker {
+    display: none;
+}
+
+.artigo-expansivel[open] summary {
+    background-color: var(--accent);
+}
+
+
+/* ================================
+   TEXTO DO BOTÃO
+================================ */
+
+.texto-aberto {
+    display: none;
+}
+
+.artigo-expansivel[open] .texto-fechado {
+    display: none;
+}
+
+.artigo-expansivel[open] .texto-aberto {
+    display: inline;
+}
+
+
+/* ================================
+   CONTEÚDO DO ARTIGO
+================================ */
 
 .conteudo-artigo {
+    border-top:
+        1px solid var(--border);
+
     color: var(--text);
+
     font-size: 1.02rem;
+
+    margin-top: 30px;
+
+    padding-top: 28px;
 }
 
 .conteudo-artigo p {
@@ -267,13 +372,21 @@ body {
 
 .conteudo-artigo h4 {
     color: var(--secondary);
-    font-size: 1.25rem;
-    margin: 28px 0 12px;
+
+    font-size: 1.3rem;
+
+    margin:
+        28px 0 12px;
+}
+
+.conteudo-artigo h4:first-child {
+    margin-top: 0;
 }
 
 .conteudo-artigo ul,
 .conteudo-artigo ol {
-    margin: 0 0 20px 26px;
+    margin:
+        0 0 20px 26px;
 }
 
 .conteudo-artigo li {
@@ -281,7 +394,9 @@ body {
 }
 
 
-/* REFERÊNCIAS DE CADA ARTIGO */
+/* ================================
+   REFERÊNCIAS DOS ARTIGOS
+================================ */
 
 .referencias-artigo {
     background-color: var(--highlight);
@@ -293,6 +408,7 @@ body {
         0 0 7px 7px;
 
     margin-top: 34px;
+
     padding: 22px 24px;
 }
 
@@ -305,14 +421,19 @@ body {
         sans-serif;
 
     font-size: 0.95rem;
+
     letter-spacing: 0.04rem;
+
     margin-bottom: 14px;
+
     text-transform: uppercase;
 }
 
 .referencias-artigo ol {
     color: var(--muted);
+
     font-size: 0.9rem;
+
     margin-left: 20px;
 }
 
@@ -325,13 +446,16 @@ body {
 }
 
 
-/* EQUIPE */
+/* ================================
+   EQUIPE
+================================ */
 
 .equipe {
     border-top:
         1px solid var(--border);
 
     margin-top: 62px;
+
     padding-top: 50px;
 }
 
@@ -354,7 +478,9 @@ body {
 
 .integrante h3 {
     color: var(--secondary);
+
     font-size: 1.25rem;
+
     margin-bottom: 8px;
 }
 
@@ -363,13 +489,16 @@ body {
 }
 
 
-/* COMENTÁRIOS */
+/* ================================
+   COMENTÁRIOS
+================================ */
 
 .comentarios {
     border-top:
         1px solid var(--border);
 
     margin-top: 58px;
+
     padding-top: 50px;
 }
 
@@ -379,17 +508,22 @@ body {
 
 .cabecalho-comentarios h2 {
     color: var(--secondary);
+
     font-size: 2rem;
+
     margin-bottom: 8px;
 }
 
 .cabecalho-comentarios > p:last-child {
     color: var(--muted);
+
     max-width: 650px;
 }
 
 
-/* RODAPÉ */
+/* ================================
+   RODAPÉ
+================================ */
 
 .rodape {
     border-top:
@@ -403,18 +537,25 @@ body {
         sans-serif;
 
     font-size: 0.85rem;
+
     margin-top: 58px;
-    padding: 28px 0 36px;
+
+    padding:
+        28px 0 36px;
+
     text-align: center;
 }
 
 .rodape-secundario {
     font-size: 0.78rem;
+
     margin-top: 4px;
 }
 
 
-/* RESPONSIVIDADE */
+/* ================================
+   RESPONSIVIDADE
+================================ */
 
 @media (max-width: 760px) {
 
@@ -449,11 +590,13 @@ body {
 
     .resumo-blog {
         margin-top: 32px;
+
         padding: 24px;
     }
 
     .artigo {
-        padding: 24px 22px;
+        padding:
+            24px 22px;
     }
 
     .titulo-secao h2 {
@@ -464,7 +607,14 @@ body {
         font-size: 0.84rem;
     }
 
+    .artigo-expansivel summary {
+        justify-content: center;
+
+        width: 100%;
+    }
+
     .referencias-artigo {
-        padding: 18px;
+        padding:
+            18px;
     }
 }
