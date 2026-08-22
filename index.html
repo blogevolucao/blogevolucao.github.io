@@ -127,9 +127,12 @@
                     o tema principal e o recorte que será desenvolvido.
                 </p>
 
+
                 <details class="artigo-expansivel">
 
-                    <summary></summary>
+                    <summary>
+                        Ler artigo completo
+                    </summary>
 
                     <div class="conteudo-artigo">
 
@@ -144,6 +147,7 @@
                             conforme o desenvolvimento do texto.
                         </p>
 
+
                         <h4>Desenvolvimento</h4>
 
                         <p>
@@ -153,10 +157,11 @@
                         </p>
 
                         <p>
-                            É possível adicionar novos subtítulos, listas,
-                            citações e outros elementos conforme a necessidade
-                            do artigo.
+                            Também podem ser utilizados subtítulos, listas,
+                            citações, exemplos e outros elementos necessários
+                            para organizar o conteúdo.
                         </p>
+
 
                         <h4>Conclusão</h4>
 
@@ -167,6 +172,8 @@
 
                     </div>
 
+
+                    <!-- REFERÊNCIAS -->
 
                     <div class="referencias-artigo">
 
@@ -230,9 +237,12 @@
                     o tema principal e o recorte que será desenvolvido.
                 </p>
 
+
                 <details class="artigo-expansivel">
 
-                    <summary></summary>
+                    <summary>
+                        Ler artigo completo
+                    </summary>
 
                     <div class="conteudo-artigo">
 
@@ -247,6 +257,7 @@
                             subtítulos para facilitar a leitura.
                         </p>
 
+
                         <h4>Desenvolvimento</h4>
 
                         <p>
@@ -256,9 +267,10 @@
                         </p>
 
                         <p>
-                            Outros elementos também poderão ser adicionados,
-                            como listas, citações e exemplos.
+                            Também poderão ser utilizados exemplos, listas,
+                            citações e outros elementos.
                         </p>
+
 
                         <h4>Conclusão</h4>
 
@@ -269,6 +281,8 @@
 
                     </div>
 
+
+                    <!-- REFERÊNCIAS -->
 
                     <div class="referencias-artigo">
 
@@ -332,9 +346,12 @@
                     o tema principal e o recorte que será desenvolvido.
                 </p>
 
+
                 <details class="artigo-expansivel">
 
-                    <summary></summary>
+                    <summary>
+                        Ler artigo completo
+                    </summary>
 
                     <div class="conteudo-artigo">
 
@@ -349,6 +366,7 @@
                             for desenvolvido e revisado.
                         </p>
 
+
                         <h4>Desenvolvimento</h4>
 
                         <p>
@@ -362,6 +380,7 @@
                             acrescentados livremente.
                         </p>
 
+
                         <h4>Conclusão</h4>
 
                         <p>
@@ -371,6 +390,8 @@
 
                     </div>
 
+
+                    <!-- REFERÊNCIAS -->
 
                     <div class="referencias-artigo">
 
@@ -425,6 +446,7 @@
 
             </div>
 
+
             <div class="lista-equipe">
 
                 <div class="integrante">
@@ -440,6 +462,7 @@
 
                 </div>
 
+
                 <div class="integrante">
 
                     <h3>
@@ -452,6 +475,7 @@
                     </p>
 
                 </div>
+
 
                 <div class="integrante">
 
@@ -492,6 +516,7 @@
 
             </div>
 
+
             <script
                 src="https://giscus.app/client.js"
                 data-repo="blogevolucao/blogevolucao.github.io"
@@ -527,6 +552,39 @@
         </footer>
 
     </section>
+
+
+    <!-- ============================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================= -->
+
+    <script>
+
+        const artigos = document.querySelectorAll(".artigo-expansivel");
+
+
+        artigos.forEach(function (artigo) {
+
+            const botao = artigo.querySelector("summary");
+
+
+            artigo.addEventListener("toggle", function () {
+
+                if (artigo.open) {
+
+                    botao.textContent = "Mostrar menos";
+
+                } else {
+
+                    botao.textContent = "Ler artigo completo";
+
+                }
+
+            });
+
+        });
+
+    </script>
 
 </body>
 </html>
