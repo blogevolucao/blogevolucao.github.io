@@ -50,9 +50,7 @@ body {
 }
 
 
-/* ================================
-   CONTAINER PRINCIPAL
-================================ */
+/* CONTAINER PRINCIPAL */
 
 .bloco {
     background-color: var(--paper);
@@ -72,9 +70,7 @@ body {
 }
 
 
-/* ================================
-   CABEÇALHO PRINCIPAL
-================================ */
+/* CABEÇALHO */
 
 .cabecalho-principal {
     background:
@@ -96,7 +92,8 @@ body {
 }
 
 .cabecalho-principal h1 {
-    font-size: clamp(3rem, 7vw, 5rem);
+    font-size:
+        clamp(3rem, 7vw, 5rem);
 
     letter-spacing: -0.04em;
 
@@ -116,9 +113,7 @@ body {
 }
 
 
-/* ================================
-   CATEGORIAS
-================================ */
+/* CATEGORIA */
 
 .categoria {
     color: var(--accent);
@@ -140,9 +135,7 @@ body {
 }
 
 
-/* ================================
-   MARGENS INTERNAS
-================================ */
+/* MARGENS INTERNAS */
 
 .resumo-blog,
 .publicacoes,
@@ -155,9 +148,7 @@ body {
 }
 
 
-/* ================================
-   SOBRE O BLOG
-================================ */
+/* SOBRE O BLOG */
 
 .resumo-blog {
     background-color: var(--highlight);
@@ -189,9 +180,7 @@ body {
 }
 
 
-/* ================================
-   TÍTULOS DE SEÇÃO
-================================ */
+/* TÍTULO DAS SEÇÕES */
 
 .titulo-secao {
     border-bottom:
@@ -220,9 +209,7 @@ body {
 }
 
 
-/* ================================
-   PUBLICAÇÕES
-================================ */
+/* PUBLICAÇÕES */
 
 .publicacoes {
     margin-top: 58px;
@@ -231,9 +218,7 @@ body {
 }
 
 
-/* ================================
-   ARTIGOS
-================================ */
+/* ARTIGO */
 
 .artigo {
     background-color: white;
@@ -275,9 +260,7 @@ body {
 }
 
 
-/* ================================
-   DADOS DA PUBLICAÇÃO
-================================ */
+/* DADOS DO ARTIGO */
 
 .dados-publicacao {
     background-color:
@@ -312,9 +295,7 @@ body {
 }
 
 
-/* ================================
-   RESUMO DO ARTIGO
-================================ */
+/* RESUMO */
 
 .resumo-artigo {
     font-size: 1.05rem;
@@ -325,19 +306,20 @@ body {
 }
 
 
-/* ================================
-   ARTIGO EXPANSÍVEL
-================================ */
+/* ARTIGO EXPANSÍVEL */
 
 .artigo-expansivel {
     margin-top: 20px;
 }
 
+
+/* BOTÃO */
+
 .artigo-expansivel summary {
     background-color:
         var(--primary);
 
-    border: 0;
+    border: none;
 
     border-radius: 6px;
 
@@ -348,6 +330,8 @@ body {
     display: inline-flex;
 
     align-items: center;
+
+    justify-content: center;
 
     font-family:
         Arial,
@@ -360,12 +344,24 @@ body {
 
     list-style: none;
 
+    min-width: 170px;
+
     padding: 11px 18px;
+
+    user-select: none;
 
     transition:
         background-color 0.2s ease,
         transform 0.2s ease,
         box-shadow 0.2s ease;
+}
+
+.artigo-expansivel summary::-webkit-details-marker {
+    display: none;
+}
+
+.artigo-expansivel summary::marker {
+    display: none;
 }
 
 .artigo-expansivel summary:hover {
@@ -379,26 +375,8 @@ body {
         translateY(-1px);
 }
 
-.artigo-expansivel summary::-webkit-details-marker {
-    display: none;
-}
 
-
-/* TEXTO QUANDO O ARTIGO ESTÁ FECHADO */
-
-.artigo-expansivel summary::after {
-    content: "Ler artigo completo";
-}
-
-
-/* TEXTO QUANDO O ARTIGO ESTÁ ABERTO */
-
-.artigo-expansivel[open] summary::after {
-    content: "Mostrar menos";
-}
-
-
-/* COR DO BOTÃO QUANDO ABERTO */
+/* BOTÃO ABERTO */
 
 .artigo-expansivel[open] summary {
     background-color:
@@ -406,13 +384,12 @@ body {
 }
 
 .artigo-expansivel[open] summary:hover {
-    background-color: #984b36;
+    background-color:
+        #984b36;
 }
 
 
-/* ================================
-   CONTEÚDO DO ARTIGO
-================================ */
+/* CONTEÚDO */
 
 .conteudo-artigo {
     border-top:
@@ -456,9 +433,7 @@ body {
 }
 
 
-/* ================================
-   REFERÊNCIAS
-================================ */
+/* REFERÊNCIAS */
 
 .referencias-artigo {
     background-color:
@@ -511,9 +486,7 @@ body {
 }
 
 
-/* ================================
-   EQUIPE
-================================ */
+/* EQUIPE */
 
 .equipe {
     border-top:
@@ -557,9 +530,7 @@ body {
 }
 
 
-/* ================================
-   COMENTÁRIOS
-================================ */
+/* COMENTÁRIOS */
 
 .comentarios {
     border-top:
@@ -591,9 +562,7 @@ body {
 }
 
 
-/* ================================
-   RODAPÉ
-================================ */
+/* RODAPÉ */
 
 .rodape {
     border-top:
@@ -624,9 +593,7 @@ body {
 }
 
 
-/* ================================
-   RESPONSIVIDADE
-================================ */
+/* RESPONSIVIDADE */
 
 @media (max-width: 760px) {
 
@@ -683,13 +650,10 @@ body {
     }
 
     .artigo-expansivel summary {
-        justify-content: center;
-
         width: 100%;
     }
 
     .referencias-artigo {
-        padding:
-            18px;
+        padding: 18px;
     }
 }
