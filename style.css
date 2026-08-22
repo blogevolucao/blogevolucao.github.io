@@ -7,14 +7,19 @@
 :root {
     --background: #ece8e1;
     --paper: #fffdf9;
+
     --primary: #23395d;
     --secondary: #16233b;
+
     --accent: #b85f45;
     --accent-soft: #f3e2dc;
+
     --text: #2f2d2a;
     --muted: #77716a;
+
     --border: #ddd5ca;
     --highlight: #f6f1ea;
+
     --shadow: rgba(36, 31, 27, 0.10);
 }
 
@@ -38,7 +43,9 @@ body {
         serif;
 
     line-height: 1.75;
+
     min-height: 100vh;
+
     padding: 48px 18px;
 }
 
@@ -49,14 +56,18 @@ body {
 
 .bloco {
     background-color: var(--paper);
+
     border: 1px solid var(--border);
+
     border-radius: 14px;
 
     box-shadow:
         0 14px 40px var(--shadow);
 
     margin: 0 auto;
+
     max-width: 980px;
+
     overflow: hidden;
 }
 
@@ -74,7 +85,9 @@ body {
         );
 
     color: white;
+
     padding: 70px 64px 64px;
+
     text-align: center;
 }
 
@@ -84,15 +97,21 @@ body {
 
 .cabecalho-principal h1 {
     font-size: clamp(3rem, 7vw, 5rem);
+
     letter-spacing: -0.04em;
+
     line-height: 1;
+
     margin-bottom: 22px;
 }
 
 .subtitulo {
     color: #d9e0eb;
+
     font-size: 1.08rem;
+
     margin: 0 auto;
+
     max-width: 650px;
 }
 
@@ -110,9 +129,13 @@ body {
         sans-serif;
 
     font-size: 0.72rem;
+
     font-weight: 700;
+
     letter-spacing: 0.18rem;
+
     margin-bottom: 10px;
+
     text-transform: uppercase;
 }
 
@@ -127,6 +150,7 @@ body {
 .comentarios,
 .rodape {
     margin-left: 58px;
+
     margin-right: 58px;
 }
 
@@ -142,13 +166,17 @@ body {
         5px solid var(--accent);
 
     border-radius: 8px;
+
     margin-top: 52px;
+
     padding: 30px 34px;
 }
 
 .resumo-blog h2 {
     color: var(--secondary);
+
     font-size: 2rem;
+
     margin-bottom: 16px;
 }
 
@@ -170,18 +198,24 @@ body {
         1px solid var(--border);
 
     margin-bottom: 34px;
+
     padding-bottom: 18px;
 }
 
 .titulo-secao h2 {
     color: var(--secondary);
-    font-size: clamp(2rem, 4vw, 2.7rem);
+
+    font-size:
+        clamp(2rem, 4vw, 2.7rem);
+
     line-height: 1.15;
+
     margin-bottom: 10px;
 }
 
 .titulo-secao > p:last-child {
     color: var(--muted);
+
     max-width: 650px;
 }
 
@@ -192,6 +226,7 @@ body {
 
 .publicacoes {
     margin-top: 58px;
+
     padding-bottom: 10px;
 }
 
@@ -202,13 +237,17 @@ body {
 
 .artigo {
     background-color: white;
-    border: 1px solid var(--border);
+
+    border:
+        1px solid var(--border);
+
     border-radius: 10px;
 
     box-shadow:
         0 6px 18px rgba(0, 0, 0, 0.04);
 
     margin-bottom: 32px;
+
     padding: 34px;
 
     transition:
@@ -220,13 +259,18 @@ body {
     box-shadow:
         0 12px 26px rgba(0, 0, 0, 0.07);
 
-    transform: translateY(-2px);
+    transform:
+        translateY(-2px);
 }
 
 .artigo h3 {
     color: var(--primary);
-    font-size: clamp(1.6rem, 3vw, 2.15rem);
+
+    font-size:
+        clamp(1.6rem, 3vw, 2.15rem);
+
     line-height: 1.25;
+
     margin-bottom: 18px;
 }
 
@@ -240,7 +284,9 @@ body {
         var(--accent-soft);
 
     border-radius: 7px;
+
     color: #6c5148;
+
     display: grid;
 
     font-family:
@@ -249,8 +295,11 @@ body {
         sans-serif;
 
     font-size: 0.88rem;
+
     gap: 4px;
+
     margin-bottom: 24px;
+
     padding: 14px 16px;
 }
 
@@ -269,7 +318,9 @@ body {
 
 .resumo-artigo {
     font-size: 1.05rem;
+
     font-weight: 500;
+
     margin-bottom: 22px;
 }
 
@@ -283,9 +334,11 @@ body {
 }
 
 .artigo-expansivel summary {
-    background-color: var(--primary);
+    background-color:
+        var(--primary);
 
     border: 0;
+
     border-radius: 6px;
 
     color: white;
@@ -302,6 +355,7 @@ body {
         sans-serif;
 
     font-size: 0.9rem;
+
     font-weight: 700;
 
     list-style: none;
@@ -315,37 +369,44 @@ body {
 }
 
 .artigo-expansivel summary:hover {
-    background-color: var(--secondary);
+    background-color:
+        var(--secondary);
 
     box-shadow:
         0 5px 12px rgba(0, 0, 0, 0.10);
 
-    transform: translateY(-1px);
+    transform:
+        translateY(-1px);
 }
 
 .artigo-expansivel summary::-webkit-details-marker {
     display: none;
 }
 
+
+/* TEXTO QUANDO O ARTIGO ESTÁ FECHADO */
+
+.artigo-expansivel summary::after {
+    content: "Ler artigo completo";
+}
+
+
+/* TEXTO QUANDO O ARTIGO ESTÁ ABERTO */
+
+.artigo-expansivel[open] summary::after {
+    content: "Mostrar menos";
+}
+
+
+/* COR DO BOTÃO QUANDO ABERTO */
+
 .artigo-expansivel[open] summary {
-    background-color: var(--accent);
+    background-color:
+        var(--accent);
 }
 
-
-/* ================================
-   TEXTO DO BOTÃO
-================================ */
-
-.texto-aberto {
-    display: none;
-}
-
-.artigo-expansivel[open] .texto-fechado {
-    display: none;
-}
-
-.artigo-expansivel[open] .texto-aberto {
-    display: inline;
+.artigo-expansivel[open] summary:hover {
+    background-color: #984b36;
 }
 
 
@@ -371,7 +432,8 @@ body {
 }
 
 .conteudo-artigo h4 {
-    color: var(--secondary);
+    color:
+        var(--secondary);
 
     font-size: 1.3rem;
 
@@ -395,11 +457,12 @@ body {
 
 
 /* ================================
-   REFERÊNCIAS DOS ARTIGOS
+   REFERÊNCIAS
 ================================ */
 
 .referencias-artigo {
-    background-color: var(--highlight);
+    background-color:
+        var(--highlight);
 
     border-top:
         1px solid var(--border);
@@ -413,7 +476,8 @@ body {
 }
 
 .referencias-artigo h4 {
-    color: var(--secondary);
+    color:
+        var(--secondary);
 
     font-family:
         Arial,
@@ -430,7 +494,8 @@ body {
 }
 
 .referencias-artigo ol {
-    color: var(--muted);
+    color:
+        var(--muted);
 
     font-size: 0.9rem;
 
@@ -461,6 +526,7 @@ body {
 
 .lista-equipe {
     display: grid;
+
     gap: 18px;
 }
 
@@ -477,7 +543,8 @@ body {
 }
 
 .integrante h3 {
-    color: var(--secondary);
+    color:
+        var(--secondary);
 
     font-size: 1.25rem;
 
@@ -485,7 +552,8 @@ body {
 }
 
 .integrante p {
-    color: var(--muted);
+    color:
+        var(--muted);
 }
 
 
@@ -507,7 +575,8 @@ body {
 }
 
 .cabecalho-comentarios h2 {
-    color: var(--secondary);
+    color:
+        var(--secondary);
 
     font-size: 2rem;
 
@@ -515,7 +584,8 @@ body {
 }
 
 .cabecalho-comentarios > p:last-child {
-    color: var(--muted);
+    color:
+        var(--muted);
 
     max-width: 650px;
 }
@@ -529,7 +599,8 @@ body {
     border-top:
         1px solid var(--border);
 
-    color: var(--muted);
+    color:
+        var(--muted);
 
     font-family:
         Arial,
@@ -565,8 +636,11 @@ body {
 
     .bloco {
         border: 0;
+
         border-radius: 0;
+
         box-shadow: none;
+
         max-width: 100%;
     }
 
@@ -585,6 +659,7 @@ body {
     .comentarios,
     .rodape {
         margin-left: 22px;
+
         margin-right: 22px;
     }
 
