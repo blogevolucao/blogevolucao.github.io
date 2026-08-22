@@ -1,3 +1,7 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,14 +11,19 @@
 :root {
     --background: #ece8e1;
     --paper: #fffdf9;
+
     --primary: #23395d;
     --secondary: #16233b;
+
     --accent: #b85f45;
     --accent-soft: #f3e2dc;
+
     --text: #2f2d2a;
     --muted: #77716a;
+
     --border: #ddd5ca;
     --highlight: #f6f1ea;
+
     --shadow: rgba(36, 31, 27, 0.10);
 }
 
@@ -45,7 +54,9 @@ body {
 }
 
 
-/* CONTAINER PRINCIPAL */
+/* ================================
+   CONTAINER PRINCIPAL
+================================ */
 
 .bloco {
     background-color: var(--paper);
@@ -65,7 +76,9 @@ body {
 }
 
 
-/* CABEÇALHO */
+/* ================================
+   CABEÇALHO PRINCIPAL
+================================ */
 
 .cabecalho-principal {
     background:
@@ -108,7 +121,9 @@ body {
 }
 
 
-/* CATEGORIAS */
+/* ================================
+   CATEGORIAS
+================================ */
 
 .categoria {
     color: var(--accent);
@@ -130,12 +145,13 @@ body {
 }
 
 
-/* CONTEÚDO INTERNO */
+/* ================================
+   MARGENS INTERNAS
+================================ */
 
 .resumo-blog,
 .publicacoes,
 .equipe,
-.bibliografia,
 .comentarios,
 .rodape {
     margin-left: 58px;
@@ -143,7 +159,9 @@ body {
 }
 
 
-/* RESUMO */
+/* ================================
+   RESUMO DO BLOG
+================================ */
 
 .resumo-blog {
     background-color: var(--highlight);
@@ -175,7 +193,9 @@ body {
 }
 
 
-/* TÍTULO DAS SEÇÕES */
+/* ================================
+   TÍTULOS DE SEÇÃO
+================================ */
 
 .titulo-secao {
     border-bottom:
@@ -204,7 +224,9 @@ body {
 }
 
 
-/* PUBLICAÇÕES */
+/* ================================
+   PUBLICAÇÕES
+================================ */
 
 .publicacoes {
     margin-top: 58px;
@@ -213,7 +235,9 @@ body {
 }
 
 
-/* ARTIGO */
+/* ================================
+   ARTIGOS
+================================ */
 
 .artigo {
     background-color: white;
@@ -226,9 +250,9 @@ body {
     box-shadow:
         0 6px 18px rgba(0, 0, 0, 0.04);
 
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 
-    padding: 32px 34px;
+    padding: 34px;
 
     transition:
         transform 0.2s ease,
@@ -254,7 +278,9 @@ body {
 }
 
 
-/* METADADOS DOS ARTIGOS */
+/* ================================
+   DADOS DA PUBLICAÇÃO
+================================ */
 
 .dados-publicacao {
     background-color:
@@ -289,33 +315,108 @@ body {
 }
 
 
-/* CONTEÚDO */
+/* ================================
+   RESUMO DO ARTIGO
+================================ */
 
 .resumo-artigo {
     font-size: 1.05rem;
 
-    margin-bottom: 18px;
+    font-weight: 500;
+
+    margin-bottom: 22px;
 }
+
+
+/* ================================
+   CONTEÚDO DO ARTIGO
+================================ */
 
 .conteudo-artigo {
     color: var(--text);
 
-    font-size: 1rem;
+    font-size: 1.02rem;
 }
 
 .conteudo-artigo p {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+}
+
+.conteudo-artigo h4 {
+    color: var(--secondary);
+
+    font-size: 1.25rem;
+
+    margin:
+        28px 0 12px;
+}
+
+.conteudo-artigo ul,
+.conteudo-artigo ol {
+    margin:
+        0 0 20px 26px;
+}
+
+.conteudo-artigo li {
+    margin-bottom: 7px;
 }
 
 
-/* LINHAS ANTIGAS */
+/* ================================
+   REFERÊNCIAS DE CADA ARTIGO
+================================ */
 
-hr {
-    display: none;
+.referencias-artigo {
+    background-color: var(--highlight);
+
+    border-top:
+        1px solid var(--border);
+
+    border-radius:
+        0 0 7px 7px;
+
+    margin-top: 34px;
+
+    padding: 22px 24px;
+}
+
+.referencias-artigo h4 {
+    color: var(--secondary);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 0.95rem;
+
+    letter-spacing: 0.04rem;
+
+    margin-bottom: 14px;
+
+    text-transform: uppercase;
+}
+
+.referencias-artigo ol {
+    color: var(--muted);
+
+    font-size: 0.9rem;
+
+    margin-left: 20px;
+}
+
+.referencias-artigo li {
+    margin-bottom: 12px;
+}
+
+.referencias-artigo li:last-child {
+    margin-bottom: 0;
 }
 
 
-/* EQUIPE */
+/* ================================
+   EQUIPE
+================================ */
 
 .equipe {
     border-top:
@@ -357,29 +458,9 @@ hr {
 }
 
 
-/* BIBLIOGRAFIA */
-
-.bibliografia {
-    border-top:
-        1px solid var(--border);
-
-    margin-top: 58px;
-
-    padding-top: 50px;
-}
-
-.bibliografia ol {
-    margin-left: 22px;
-}
-
-.bibliografia li {
-    margin-bottom: 16px;
-
-    padding-left: 6px;
-}
-
-
-/* COMENTÁRIOS */
+/* ================================
+   COMENTÁRIOS
+================================ */
 
 .comentarios {
     border-top:
@@ -409,7 +490,9 @@ hr {
 }
 
 
-/* RODAPÉ */
+/* ================================
+   RODAPÉ
+================================ */
 
 .rodape {
     border-top:
@@ -439,7 +522,9 @@ hr {
 }
 
 
-/* RESPONSIVIDADE */
+/* ================================
+   RESPONSIVIDADE
+================================ */
 
 @media (max-width: 760px) {
 
@@ -469,7 +554,6 @@ hr {
     .resumo-blog,
     .publicacoes,
     .equipe,
-    .bibliografia,
     .comentarios,
     .rodape {
         margin-left: 22px;
@@ -494,4 +578,10 @@ hr {
     .dados-publicacao {
         font-size: 0.84rem;
     }
+
+    .referencias-artigo {
+        padding:
+            18px 18px;
+    }
+
 }
