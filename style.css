@@ -1,7 +1,3 @@
-/* ================================
-   CONFIGURAÇÕES GERAIS
-================================ */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,19 +7,14 @@
 :root {
     --background: #ece8e1;
     --paper: #fffdf9;
-
     --primary: #23395d;
     --secondary: #16233b;
-
     --accent: #b85f45;
     --accent-soft: #f3e2dc;
-
     --text: #2f2d2a;
     --muted: #77716a;
-
     --border: #ddd5ca;
     --highlight: #f6f1ea;
-
     --shadow: rgba(36, 31, 27, 0.10);
 }
 
@@ -47,38 +38,28 @@ body {
         serif;
 
     line-height: 1.75;
-
     min-height: 100vh;
-
     padding: 48px 18px;
 }
 
 
-/* ================================
-   CONTAINER PRINCIPAL
-================================ */
+/* CONTAINER PRINCIPAL */
 
 .bloco {
     background-color: var(--paper);
-
     border: 1px solid var(--border);
-
     border-radius: 14px;
 
     box-shadow:
         0 14px 40px var(--shadow);
 
     margin: 0 auto;
-
     max-width: 980px;
-
     overflow: hidden;
 }
 
 
-/* ================================
-   CABEÇALHO PRINCIPAL
-================================ */
+/* CABEÇALHO */
 
 .cabecalho-principal {
     background:
@@ -89,9 +70,7 @@ body {
         );
 
     color: white;
-
     padding: 70px 64px 64px;
-
     text-align: center;
 }
 
@@ -100,30 +79,21 @@ body {
 }
 
 .cabecalho-principal h1 {
-    font-size:
-        clamp(3rem, 7vw, 5rem);
-
+    font-size: clamp(3rem, 7vw, 5rem);
     letter-spacing: -0.04em;
-
     line-height: 1;
-
     margin-bottom: 22px;
 }
 
 .subtitulo {
     color: #d9e0eb;
-
     font-size: 1.08rem;
-
     margin: 0 auto;
-
     max-width: 650px;
 }
 
 
-/* ================================
-   CATEGORIAS
-================================ */
+/* CATEGORIAS */
 
 .categoria {
     color: var(--accent);
@@ -134,20 +104,14 @@ body {
         sans-serif;
 
     font-size: 0.72rem;
-
     font-weight: 700;
-
     letter-spacing: 0.18rem;
-
     margin-bottom: 10px;
-
     text-transform: uppercase;
 }
 
 
-/* ================================
-   MARGENS INTERNAS
-================================ */
+/* MARGENS INTERNAS */
 
 .resumo-blog,
 .publicacoes,
@@ -159,9 +123,7 @@ body {
 }
 
 
-/* ================================
-   RESUMO DO BLOG
-================================ */
+/* SOBRE O BLOG */
 
 .resumo-blog {
     background-color: var(--highlight);
@@ -170,17 +132,13 @@ body {
         5px solid var(--accent);
 
     border-radius: 8px;
-
     margin-top: 52px;
-
     padding: 30px 34px;
 }
 
 .resumo-blog h2 {
     color: var(--secondary);
-
     font-size: 2rem;
-
     margin-bottom: 16px;
 }
 
@@ -193,65 +151,48 @@ body {
 }
 
 
-/* ================================
-   TÍTULOS DE SEÇÃO
-================================ */
+/* TÍTULOS DAS SEÇÕES */
 
 .titulo-secao {
     border-bottom:
         1px solid var(--border);
 
     margin-bottom: 34px;
-
     padding-bottom: 18px;
 }
 
 .titulo-secao h2 {
     color: var(--secondary);
-
-    font-size:
-        clamp(2rem, 4vw, 2.7rem);
-
+    font-size: clamp(2rem, 4vw, 2.7rem);
     line-height: 1.15;
-
     margin-bottom: 10px;
 }
 
 .titulo-secao > p:last-child {
     color: var(--muted);
-
     max-width: 650px;
 }
 
 
-/* ================================
-   PUBLICAÇÕES
-================================ */
+/* PUBLICAÇÕES */
 
 .publicacoes {
     margin-top: 58px;
-
     padding-bottom: 10px;
 }
 
 
-/* ================================
-   ARTIGOS
-================================ */
+/* ARTIGOS */
 
 .artigo {
     background-color: white;
-
-    border:
-        1px solid var(--border);
-
+    border: 1px solid var(--border);
     border-radius: 10px;
 
     box-shadow:
         0 6px 18px rgba(0, 0, 0, 0.04);
 
     margin-bottom: 32px;
-
     padding: 34px;
 
     transition:
@@ -268,28 +209,20 @@ body {
 
 .artigo h3 {
     color: var(--primary);
-
-    font-size:
-        clamp(1.6rem, 3vw, 2.15rem);
-
+    font-size: clamp(1.6rem, 3vw, 2.15rem);
     line-height: 1.25;
-
     margin-bottom: 18px;
 }
 
 
-/* ================================
-   DADOS DA PUBLICAÇÃO
-================================ */
+/* DADOS DA PUBLICAÇÃO */
 
 .dados-publicacao {
     background-color:
         var(--accent-soft);
 
     border-radius: 7px;
-
     color: #6c5148;
-
     display: grid;
 
     font-family:
@@ -298,11 +231,8 @@ body {
         sans-serif;
 
     font-size: 0.88rem;
-
     gap: 4px;
-
     margin-bottom: 24px;
-
     padding: 14px 16px;
 }
 
@@ -315,26 +245,19 @@ body {
 }
 
 
-/* ================================
-   RESUMO DO ARTIGO
-================================ */
+/* RESUMO DO ARTIGO */
 
 .resumo-artigo {
     font-size: 1.05rem;
-
     font-weight: 500;
-
     margin-bottom: 22px;
 }
 
 
-/* ================================
-   CONTEÚDO DO ARTIGO
-================================ */
+/* CONTEÚDO DO ARTIGO */
 
 .conteudo-artigo {
     color: var(--text);
-
     font-size: 1.02rem;
 }
 
@@ -344,17 +267,13 @@ body {
 
 .conteudo-artigo h4 {
     color: var(--secondary);
-
     font-size: 1.25rem;
-
-    margin:
-        28px 0 12px;
+    margin: 28px 0 12px;
 }
 
 .conteudo-artigo ul,
 .conteudo-artigo ol {
-    margin:
-        0 0 20px 26px;
+    margin: 0 0 20px 26px;
 }
 
 .conteudo-artigo li {
@@ -362,9 +281,7 @@ body {
 }
 
 
-/* ================================
-   REFERÊNCIAS DE CADA ARTIGO
-================================ */
+/* REFERÊNCIAS DE CADA ARTIGO */
 
 .referencias-artigo {
     background-color: var(--highlight);
@@ -376,7 +293,6 @@ body {
         0 0 7px 7px;
 
     margin-top: 34px;
-
     padding: 22px 24px;
 }
 
@@ -389,19 +305,14 @@ body {
         sans-serif;
 
     font-size: 0.95rem;
-
     letter-spacing: 0.04rem;
-
     margin-bottom: 14px;
-
     text-transform: uppercase;
 }
 
 .referencias-artigo ol {
     color: var(--muted);
-
     font-size: 0.9rem;
-
     margin-left: 20px;
 }
 
@@ -414,22 +325,18 @@ body {
 }
 
 
-/* ================================
-   EQUIPE
-================================ */
+/* EQUIPE */
 
 .equipe {
     border-top:
         1px solid var(--border);
 
     margin-top: 62px;
-
     padding-top: 50px;
 }
 
 .lista-equipe {
     display: grid;
-
     gap: 18px;
 }
 
@@ -447,9 +354,7 @@ body {
 
 .integrante h3 {
     color: var(--secondary);
-
     font-size: 1.25rem;
-
     margin-bottom: 8px;
 }
 
@@ -458,16 +363,13 @@ body {
 }
 
 
-/* ================================
-   COMENTÁRIOS
-================================ */
+/* COMENTÁRIOS */
 
 .comentarios {
     border-top:
         1px solid var(--border);
 
     margin-top: 58px;
-
     padding-top: 50px;
 }
 
@@ -477,22 +379,17 @@ body {
 
 .cabecalho-comentarios h2 {
     color: var(--secondary);
-
     font-size: 2rem;
-
     margin-bottom: 8px;
 }
 
 .cabecalho-comentarios > p:last-child {
     color: var(--muted);
-
     max-width: 650px;
 }
 
 
-/* ================================
-   RODAPÉ
-================================ */
+/* RODAPÉ */
 
 .rodape {
     border-top:
@@ -506,25 +403,18 @@ body {
         sans-serif;
 
     font-size: 0.85rem;
-
     margin-top: 58px;
-
-    padding:
-        28px 0 36px;
-
+    padding: 28px 0 36px;
     text-align: center;
 }
 
 .rodape-secundario {
     font-size: 0.78rem;
-
     margin-top: 4px;
 }
 
 
-/* ================================
-   RESPONSIVIDADE
-================================ */
+/* RESPONSIVIDADE */
 
 @media (max-width: 760px) {
 
@@ -534,11 +424,8 @@ body {
 
     .bloco {
         border: 0;
-
         border-radius: 0;
-
         box-shadow: none;
-
         max-width: 100%;
     }
 
@@ -562,13 +449,11 @@ body {
 
     .resumo-blog {
         margin-top: 32px;
-
         padding: 24px;
     }
 
     .artigo {
-        padding:
-            24px 22px;
+        padding: 24px 22px;
     }
 
     .titulo-secao h2 {
@@ -580,8 +465,6 @@ body {
     }
 
     .referencias-artigo {
-        padding:
-            18px 18px;
+        padding: 18px;
     }
-
 }
